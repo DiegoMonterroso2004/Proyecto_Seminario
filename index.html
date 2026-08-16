@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Milian — Calzado</title>
+
+    <meta
+        name="description"
+        content="Catálogo digital de Zapatería Milian con visualización 3D y realidad aumentada."
+    >
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+
+        <div class="nav-container">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-main">MILIAN</span>
+                <span class="logo-small">CALZADO</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+
+                <a href="#inicio">Inicio</a>
+                <a href="#coleccion">Colección</a>
+                <a href="#experiencia">Experiencia 3D</a>
+                <a href="#nosotros">Nosotros</a>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <button class="search-button" aria-label="Buscar">
+                    🔍
+                </button>
+
+                <button
+                    class="menu-button"
+                    id="menuButton"
+                    aria-label="Abrir menú"
+                >
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <header class="hero" id="inicio">
+
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-copy">
+
+                <div class="eyebrow">
+                    COLECCIÓN 2026
+                </div>
+
+                <h1>
+                    El carácter
+                    <br>
+                    comienza
+                    <span>en tus pasos.</span>
+                </h1>
+
+                <p>
+                    Diseño, presencia y comodidad reunidos en una
+                    colección creada para acompañarte todos los días.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#coleccion"
+                        class="button button-light"
+                    >
+                        Explorar colección
+                        <span>↗</span>
+                    </a>
+
+                    <a
+                        href="#experiencia"
+                        class="button button-ghost"
+                    >
+                        Descubrir experiencia 3D
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-bottom">
+
+                <div class="hero-stat">
+                    <span>01</span>
+                    <p>Diseños seleccionados</p>
+                </div>
+
+                <div class="hero-stat">
+                    <span>02</span>
+                    <p>Visualización 3D</p>
+                </div>
+
+                <div class="hero-stat">
+                    <span>03</span>
+                    <p>Realidad aumentada</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <section class="intro-section">
+
+        <div class="container">
+
+            <div class="intro-grid">
+
+                <div class="section-index">
+                    01 / COLECCIÓN
+                </div>
+
+                <div class="intro-title">
+
+                    <h2>
+                        Elegancia sin
+                        <span>complicaciones.</span>
+                    </h2>
+
+                </div>
+
+                <div class="intro-description">
+
+                    <p>
+                        Explora nuestra selección de calzado diseñada
+                        para diferentes estilos, momentos y ocasiones.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section
+        class="collection-section"
+        id="coleccion"
+    >
+
+        <div class="container">
+
+            <div class="products-grid">
+
+                <article
+                    class="product-card product-large"
+                    onclick="verProducto(1)"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="img/zapato1.jpg"
+                            alt="Zapato Milian Heritage"
+                        >
+
+                        <span class="product-label">
+                            NUEVO
+                        </span>
+
+                        <button
+                            class="product-arrow"
+                            onclick="event.stopPropagation(); verProducto(1)"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                    <div class="product-data">
+
+                        <div>
+
+                            <span class="product-category">
+                                CASUAL
+                            </span>
+
+                            <h3>
+                                Heritage 01
+                            </h3>
+
+                        </div>
+
+                        <strong>
+                            Q 399
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="product-card"
+                    onclick="verProducto(2)"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="img/zapato2.jpg"
+                            alt="Zapato Milian Classic"
+                        >
+
+                        <span class="product-label">
+                            CLÁSICO
+                        </span>
+
+                        <button
+                            class="product-arrow"
+                            onclick="event.stopPropagation(); verProducto(2)"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                    <div class="product-data">
+
+                        <div>
+
+                            <span class="product-category">
+                                FORMAL
+                            </span>
+
+                            <h3>
+                                Classic 02
+                            </h3>
+
+                        </div>
+
+                        <strong>
+                            Q 449
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="product-card"
+                    onclick="verProducto(3)"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="img/zapato3.jpg"
+                            alt="Zapato Milian Oxford"
+                        >
+
+                        <span class="product-label">
+                            PREMIUM
+                        </span>
+
+                        <button
+                            class="product-arrow"
+                            onclick="event.stopPropagation(); verProducto(3)"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                    <div class="product-data">
+
+                        <div>
+
+                            <span class="product-category">
+                                ELEGANTE
+                            </span>
+
+                            <h3>
+                                Oxford 03
+                            </h3>
+
+                        </div>
+
+                        <strong>
+                            Q 499
+                        </strong>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section
+        class="experience-section"
+        id="experiencia"
+    >
+
+        <div class="container">
+
+            <div class="experience-grid">
+
+                <div class="experience-copy">
+
+                    <div class="section-index light">
+                        02 / EXPERIENCIA
+                    </div>
+
+                    <span class="experience-badge">
+                        TECNOLOGÍA + CALZADO
+                    </span>
+
+                    <h2>
+                        No solo lo mires.
+                        <span>Explóralo.</span>
+                    </h2>
+
+                    <p class="experience-description">
+                        Observa cada modelo en tres dimensiones,
+                        gíralo, acércalo y visualízalo posteriormente
+                        en tu espacio mediante realidad aumentada.
+                    </p>
+
+
+                    <div class="steps">
+
+                        <div class="step">
+
+                            <span>01</span>
+
+                            <div>
+                                <h4>Selecciona</h4>
+                                <p>Elige el modelo que deseas explorar.</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="step">
+
+                            <span>02</span>
+
+                            <div>
+                                <h4>Observa en 3D</h4>
+                                <p>Gira el producto y revisa cada detalle.</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="step">
+
+                            <span>03</span>
+
+                            <div>
+                                <h4>Activa la RA</h4>
+                                <p>Colócalo virtualmente en tu entorno.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="button button-copper"
+                        onclick="demoRA()"
+                    >
+                        Probar experiencia
+                        <span>↗</span>
+                    </button>
+
+                </div>
+
+
+                <div class="experience-visual">
+
+                    <div class="phone">
+
+                        <div class="phone-camera">
+
+                            <img
+                                src="img/zapato2.jpg"
+                                alt="Vista de realidad aumentada"
+                            >
+
+                            <div class="camera-gradient"></div>
+
+                            <div class="camera-ui">
+
+                                <span class="camera-pill">
+                                    AR MODE
+                                </span>
+
+                                <div class="tracking-box"></div>
+
+                                <div class="camera-product">
+
+                                    <span>
+                                        CLASSIC 02
+                                    </span>
+
+                                    <strong>
+                                        Q 449
+                                    </strong>
+
+                                </div>
+
+                                <button class="camera-button">
+                                    Colocar en mi espacio
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section
+        class="manifesto-section"
+        id="nosotros"
+    >
+
+        <div class="container">
+
+            <div class="manifesto-grid">
+
+                <div class="section-index">
+                    03 / MILIAN
+                </div>
+
+                <div class="manifesto-copy">
+
+                    <p class="manifesto-small">
+                        NUESTRA ESENCIA
+                    </p>
+
+                    <h2>
+                        Calzado para quienes entienden
+                        que cada detalle
+                        <span>importa.</span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <a href="#inicio" class="footer-logo">
+                    MILIAN
+                </a>
+
+                <div class="footer-links">
+
+                    <div>
+
+                        <span>
+                            NAVEGACIÓN
+                        </span>
+
+                        <a href="#inicio">Inicio</a>
+                        <a href="#coleccion">Colección</a>
+                        <a href="#experiencia">Experiencia 3D</a>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            INFORMACIÓN
+                        </span>
+
+                        <a href="#nosotros">Nosotros</a>
+                        <a href="#">Contacto</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Zapatería Milian
+                </p>
+
+                <p>
+                    CATÁLOGO DIGITAL + REALIDAD AUMENTADA
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
