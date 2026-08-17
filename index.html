@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Milian — Calzado</title>
+    <title>Milian — Calzado hecho a mano</title>
 
     <meta
         name="description"
-        content="Catálogo digital de Zapatería Milian con visualización 3D y realidad aumentada."
+        content="Milian: calzado de cuero hecho a mano. Catálogo digital con visualización en 3D y realidad aumentada."
     >
 
     <link rel="stylesheet" href="css/styles.css">
@@ -16,34 +16,47 @@
 
 <body>
 
+    <a href="#coleccion" class="skip-link">Saltar a la colección</a>
+
     <nav class="navbar" id="navbar">
 
         <div class="nav-container">
 
             <a href="#inicio" class="logo">
                 <span class="logo-main">MILIAN</span>
-                <span class="logo-small">CALZADO</span>
+                <span class="logo-small">CALZADO DE CUERO, HECHO A MANO</span>
             </a>
 
             <div class="nav-links" id="navLinks">
 
                 <a href="#inicio">Inicio</a>
                 <a href="#coleccion">Colección</a>
-                <a href="#experiencia">Experiencia 3D</a>
-                <a href="#nosotros">Nosotros</a>
+                <a href="#experiencia">Realidad aumentada</a>
+                <a href="#nosotros">Oficio</a>
 
             </div>
 
             <div class="nav-actions">
 
-                <button class="search-button" aria-label="Buscar">
-                    🔍
+                <button
+                    class="account-button"
+                    id="accountButton"
+                    aria-haspopup="dialog"
+                    aria-controls="accountModal"
+                >
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <circle cx="8" cy="5.2" r="2.9" stroke="currentColor" stroke-width="1.2"/>
+                        <path d="M2.3 14c.9-3 3-4.5 5.7-4.5s4.8 1.5 5.7 4.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Mi cuenta</span>
                 </button>
 
                 <button
                     class="menu-button"
                     id="menuButton"
                     aria-label="Abrir menú"
+                    aria-expanded="false"
+                    aria-controls="navLinks"
                 >
                     <span></span>
                     <span></span>
@@ -66,22 +79,23 @@
             <div class="hero-copy">
 
                 <div class="eyebrow">
-                    COLECCIÓN 2026
+                    Colección 2026 — curtido vegetal
                 </div>
 
-                <h1>
+                <h1 class="reveal">
                     El carácter
                     <br>
                     comienza
                     <span>en tus pasos.</span>
                 </h1>
 
-                <p>
-                    Diseño, presencia y comodidad reunidos en una
-                    colección creada para acompañarte todos los días.
+                <p class="reveal">
+                    Cuero pleno flor, costura a mano y una horma pensada
+                    para acompañarte todos los días — vista cada modelo
+                    en 3D antes de que llegue a tu puerta.
                 </p>
 
-                <div class="hero-buttons">
+                <div class="hero-buttons reveal">
 
                     <a
                         href="#coleccion"
@@ -95,7 +109,7 @@
                         href="#experiencia"
                         class="button button-ghost"
                     >
-                        Descubrir experiencia 3D
+                        Probar la realidad aumentada
                     </a>
 
                 </div>
@@ -103,21 +117,28 @@
             </div>
 
 
-            <div class="hero-bottom">
+            <div class="hero-bottom reveal">
 
                 <div class="hero-stat">
-                    <span>01</span>
-                    <p>Diseños seleccionados</p>
+                    <svg class="stitch-icon" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true">
+                        <path d="M2 11h4M8 11h4M14 11h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                    </svg>
+                    <p>Cada modelo, girable en 3D desde el navegador</p>
                 </div>
 
                 <div class="hero-stat">
-                    <span>02</span>
-                    <p>Visualización 3D</p>
+                    <svg class="stitch-icon" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true">
+                        <rect x="3" y="2" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.4"/>
+                        <path d="M9 17h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                    </svg>
+                    <p>Realidad aumentada: pruébalo en tu propio piso</p>
                 </div>
 
                 <div class="hero-stat">
-                    <span>03</span>
-                    <p>Realidad aumentada</p>
+                    <svg class="stitch-icon" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true">
+                        <path d="M11 2C7 6 5 9 5 12.5A6 6 0 0017 12.5C17 9 15 6 11 2Z" stroke="currentColor" stroke-width="1.4"/>
+                    </svg>
+                    <p>Cuero curtido de forma vegetal, sin cromo</p>
                 </div>
 
             </div>
@@ -134,23 +155,24 @@
             <div class="intro-grid">
 
                 <div class="section-index">
-                    01 / COLECCIÓN
+                    01 / Colección
                 </div>
 
                 <div class="intro-title">
 
-                    <h2>
-                        Elegancia sin
-                        <span>complicaciones.</span>
+                    <h2 class="reveal">
+                        Hecho con oficio,
+                        <span>pensado para durar.</span>
                     </h2>
 
                 </div>
 
-                <div class="intro-description">
+                <div class="intro-description reveal">
 
                     <p>
-                        Explora nuestra selección de calzado diseñada
-                        para diferentes estilos, momentos y ocasiones.
+                        Tres modelos elegidos por su hechura, no por
+                        temporada. Gíralos en 3D, compáralos con lo que
+                        ya tienes en el clóset y decide con calma.
                     </p>
 
                 </div>
@@ -172,24 +194,30 @@
             <div class="products-grid">
 
                 <article
-                    class="product-card product-large"
+                    class="product-card product-large reveal"
                     onclick="verProducto(1)"
+                    data-name="Heritage 01"
+                    data-price="Q 399"
+                    data-image="imagenes/1.jpeg"
+                    data-alt="Zapato Milian Heritage 01, cuero nobuck color tabaco"
                 >
 
-                    <div class="product-image">
+                    <div class="product-image product-image-1">
 
                         <img
-                            src="img/zapato1.jpg"
-                            alt="Zapato Milian Heritage"
+                            src="imagenes/1.jpeg"
+                            alt="Zapato Milian Heritage 01, cuero nobuck color tabaco"
+                            loading="lazy"
                         >
 
                         <span class="product-label">
-                            NUEVO
+                            Nuevo
                         </span>
 
                         <button
                             class="product-arrow"
                             onclick="event.stopPropagation(); verProducto(1)"
+                            aria-label="Ver Heritage 01 en 3D"
                         >
                             ↗
                         </button>
@@ -201,7 +229,7 @@
                         <div>
 
                             <span class="product-category">
-                                CASUAL
+                                Casual · Nobuck
                             </span>
 
                             <h3>
@@ -220,24 +248,30 @@
 
 
                 <article
-                    class="product-card"
+                    class="product-card reveal"
                     onclick="verProducto(2)"
+                    data-name="Classic 02"
+                    data-price="Q 449"
+                    data-image="imagenes/2.jpeg"
+                    data-alt="Zapato Milian Classic 02, piel lisa color negro"
                 >
 
-                    <div class="product-image">
+                    <div class="product-image product-image-2">
 
                         <img
-                            src="img/zapato2.jpg"
-                            alt="Zapato Milian Classic"
+                            src="imagenes/2.jpeg"
+                            alt="Zapato Milian Classic 02, piel lisa color negro"
+                            loading="lazy"
                         >
 
                         <span class="product-label">
-                            CLÁSICO
+                            Clásico
                         </span>
 
                         <button
                             class="product-arrow"
                             onclick="event.stopPropagation(); verProducto(2)"
+                            aria-label="Ver Classic 02 en 3D"
                         >
                             ↗
                         </button>
@@ -249,7 +283,7 @@
                         <div>
 
                             <span class="product-category">
-                                FORMAL
+                                Formal · Piel lisa
                             </span>
 
                             <h3>
@@ -268,24 +302,30 @@
 
 
                 <article
-                    class="product-card"
+                    class="product-card reveal"
                     onclick="verProducto(3)"
+                    data-name="Oxford 03"
+                    data-price="Q 499"
+                    data-image="imagenes/3.jpeg"
+                    data-alt="Zapato Milian Oxford 03, charol color vino"
                 >
 
-                    <div class="product-image">
+                    <div class="product-image product-image-3">
 
                         <img
-                            src="img/zapato3.jpg"
-                            alt="Zapato Milian Oxford"
+                            src="imagenes/3.jpeg"
+                            alt="Zapato Milian Oxford 03, charol color vino"
+                            loading="lazy"
                         >
 
                         <span class="product-label">
-                            PREMIUM
+                            Premium
                         </span>
 
                         <button
                             class="product-arrow"
                             onclick="event.stopPropagation(); verProducto(3)"
+                            aria-label="Ver Oxford 03 en 3D"
                         >
                             ↗
                         </button>
@@ -297,7 +337,7 @@
                         <div>
 
                             <span class="product-category">
-                                ELEGANTE
+                                Elegante · Charol
                             </span>
 
                             <h3>
@@ -333,26 +373,28 @@
                 <div class="experience-copy">
 
                     <div class="section-index light">
-                        02 / EXPERIENCIA
+                        02 / Experiencia
                     </div>
 
                     <span class="experience-badge">
-                        TECNOLOGÍA + CALZADO
+                        Cuero real, sin salir de casa
                     </span>
 
-                    <h2>
+                    <h2 class="reveal">
                         No solo lo mires.
-                        <span>Explóralo.</span>
+                        <span>Pruébatelo.</span>
                     </h2>
 
-                    <p class="experience-description">
-                        Observa cada modelo en tres dimensiones,
-                        gíralo, acércalo y visualízalo posteriormente
-                        en tu espacio mediante realidad aumentada.
+                    <p class="experience-description reveal">
+                        Observa cada modelo en tres dimensiones, gíralo
+                        para ver la costura y la suela, y colócalo
+                        después en tu propio espacio con realidad
+                        aumentada — así sabes cómo se ve antes de que
+                        llegue el paquete.
                     </p>
 
 
-                    <div class="steps">
+                    <div class="steps reveal">
 
                         <div class="step">
 
@@ -360,7 +402,7 @@
 
                             <div>
                                 <h4>Selecciona</h4>
-                                <p>Elige el modelo que deseas explorar.</p>
+                                <p>Elige el modelo que quieres explorar de cerca.</p>
                             </div>
 
                         </div>
@@ -372,7 +414,7 @@
 
                             <div>
                                 <h4>Observa en 3D</h4>
-                                <p>Gira el producto y revisa cada detalle.</p>
+                                <p>Gíralo y revisa la costura, la suela y el acabado.</p>
                             </div>
 
                         </div>
@@ -384,7 +426,7 @@
 
                             <div>
                                 <h4>Activa la RA</h4>
-                                <p>Colócalo virtualmente en tu entorno.</p>
+                                <p>Colócalo junto a tus otros pares y compara la talla.</p>
                             </div>
 
                         </div>
@@ -393,7 +435,7 @@
 
 
                     <button
-                        class="button button-copper"
+                        class="button button-copper reveal"
                         onclick="demoRA()"
                     >
                         Probar experiencia
@@ -403,15 +445,17 @@
                 </div>
 
 
-                <div class="experience-visual">
+                <div class="experience-visual reveal">
 
                     <div class="phone">
 
                         <div class="phone-camera">
 
                             <img
-                                src="img/zapato2.jpg"
-                                alt="Vista de realidad aumentada"
+                                id="camaraImagen"
+                                src="imagenes/2.jpeg"
+                                alt="Vista previa de realidad aumentada del modelo Classic 02"
+                                loading="lazy"
                             >
 
                             <div class="camera-gradient"></div>
@@ -419,24 +463,25 @@
                             <div class="camera-ui">
 
                                 <span class="camera-pill">
-                                    AR MODE
+                                    <svg width="8" height="8" viewBox="0 0 8 8" aria-hidden="true"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
+                                    Modo RA
                                 </span>
 
                                 <div class="tracking-box"></div>
 
                                 <div class="camera-product">
 
-                                    <span>
-                                        CLASSIC 02
+                                    <span id="camaraNombre">
+                                        Classic 02
                                     </span>
 
-                                    <strong>
+                                    <strong id="camaraPrecio">
                                         Q 449
                                     </strong>
 
                                 </div>
 
-                                <button class="camera-button">
+                                <button class="camera-button" id="camaraColocar" type="button">
                                     Colocar en mi espacio
                                 </button>
 
@@ -465,20 +510,35 @@
             <div class="manifesto-grid">
 
                 <div class="section-index">
-                    03 / MILIAN
+                    03 / Oficio
                 </div>
 
                 <div class="manifesto-copy">
 
                     <p class="manifesto-small">
-                        NUESTRA ESENCIA
+                        Nuestra esencia
                     </p>
 
-                    <h2>
-                        Calzado para quienes entienden
-                        que cada detalle
-                        <span>importa.</span>
+                    <h2 class="reveal">
+                        Zapatos para quienes leen
+                        la costura antes de leer
+                        <span>la etiqueta.</span>
                     </h2>
+
+                    <div class="manifesto-details reveal">
+                        <div>
+                            <strong>Curtido vegetal</strong>
+                            <p>Sin cromo, con el olor y el tacto del cuero real.</p>
+                        </div>
+                        <div>
+                            <strong>Costura a mano</strong>
+                            <p>Cada puntada revisada antes de salir del taller.</p>
+                        </div>
+                        <div>
+                            <strong>Horma guatemalteca</strong>
+                            <p>Diseñada y probada aquí, no importada a ciegas.</p>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -496,7 +556,7 @@
             <div class="footer-top">
 
                 <a href="#inicio" class="footer-logo">
-                    MILIAN
+                    Milian
                 </a>
 
                 <div class="footer-links">
@@ -504,22 +564,22 @@
                     <div>
 
                         <span>
-                            NAVEGACIÓN
+                            Navegación
                         </span>
 
                         <a href="#inicio">Inicio</a>
                         <a href="#coleccion">Colección</a>
-                        <a href="#experiencia">Experiencia 3D</a>
+                        <a href="#experiencia">Realidad aumentada</a>
 
                     </div>
 
                     <div>
 
                         <span>
-                            INFORMACIÓN
+                            Información
                         </span>
 
-                        <a href="#nosotros">Nosotros</a>
+                        <a href="#nosotros">Oficio</a>
                         <a href="#">Contacto</a>
 
                     </div>
@@ -535,7 +595,7 @@
                 </p>
 
                 <p>
-                    CATÁLOGO DIGITAL + REALIDAD AUMENTADA
+                    Catálogo digital + realidad aumentada
                 </p>
 
             </div>
@@ -543,6 +603,120 @@
         </div>
 
     </footer>
+
+
+    <div class="modal-overlay" id="accountOverlay" hidden>
+
+        <div
+            class="account-modal"
+            id="accountModal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="accountModalTitle"
+        >
+
+            <button class="modal-close" id="accountClose" aria-label="Cerrar">
+                ✕
+            </button>
+
+            <div class="modal-stitch" aria-hidden="true"></div>
+
+            <div class="modal-tabs" role="tablist" aria-label="Cuenta">
+
+                <button
+                    class="modal-tab is-active"
+                    id="tabLogin"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="panelLogin"
+                    type="button"
+                >
+                    Iniciar sesión
+                </button>
+
+                <button
+                    class="modal-tab"
+                    id="tabRegister"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panelRegister"
+                    type="button"
+                >
+                    Crear cuenta
+                </button>
+
+            </div>
+
+
+            <div class="modal-panel" id="panelLogin" role="tabpanel" aria-labelledby="tabLogin">
+
+                <h2 id="accountModalTitle">Bienvenido de nuevo</h2>
+                <p class="modal-subtitle">Entra para ver tus pedidos y tus modelos guardados.</p>
+
+                <form id="loginForm" novalidate>
+
+                    <label for="loginEmail">Correo electrónico</label>
+                    <input type="email" id="loginEmail" name="email" autocomplete="email" required>
+
+                    <label for="loginPassword">Contraseña</label>
+                    <input type="password" id="loginPassword" name="password" autocomplete="current-password" required>
+
+                    <a href="#" class="modal-link">¿Olvidaste tu contraseña?</a>
+
+                    <button type="submit" class="button button-copper modal-submit">
+                        Iniciar sesión
+                        <span>↗</span>
+                    </button>
+
+                    <p class="modal-feedback" id="loginFeedback" role="status" aria-live="polite"></p>
+
+                </form>
+
+                <p class="modal-switch">
+                    ¿Aún no tienes cuenta?
+                    <button type="button" class="modal-switch-link" data-target="register">Crear una</button>
+                </p>
+
+            </div>
+
+
+            <div class="modal-panel" id="panelRegister" role="tabpanel" aria-labelledby="tabRegister" hidden>
+
+                <h2>Crea tu cuenta</h2>
+                <p class="modal-subtitle">Guarda tus modelos favoritos y agiliza tus próximas compras.</p>
+
+                <form id="registerForm" novalidate>
+
+                    <label for="registerName">Nombre completo</label>
+                    <input type="text" id="registerName" name="name" autocomplete="name" required>
+
+                    <label for="registerEmail">Correo electrónico</label>
+                    <input type="email" id="registerEmail" name="email" autocomplete="email" required>
+
+                    <label for="registerPassword">Contraseña</label>
+                    <input type="password" id="registerPassword" name="password" autocomplete="new-password" minlength="8" required>
+
+                    <p class="modal-hint">Mínimo 8 caracteres.</p>
+
+                    <button type="submit" class="button button-copper modal-submit">
+                        Crear cuenta
+                        <span>↗</span>
+                    </button>
+
+                    <p class="modal-feedback" id="registerFeedback" role="status" aria-live="polite"></p>
+
+                </form>
+
+                <p class="modal-switch">
+                    ¿Ya tienes cuenta?
+                    <button type="button" class="modal-switch-link" data-target="login">Iniciar sesión</button>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 
     <script src="js/app.js"></script>
